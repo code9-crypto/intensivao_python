@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Fatorial JS</title>
+            <script>
+
+                var n = parseInt(prompt("Digite um número entre 0 e 100"))
+                
+                
+                if( n > 0 && n <= 100){
+                    var total = 1
+                    for( let i = n; i >= 1; i-- ){
+                        total = total * i
+                    }
+                    document.write("O fatorial do número " + n + " é " + total)                    
+                }else if( n == 0 || n == 1 ){
+                    document.write("O fatorial do número " + n + " é " + 1)                        
+                }else if( n < 0 || n > 100 || isNaN(n)){
+                    document.write("Erro. O número digitado deverá ser maior que 0 e menor que 100")                    
+                }
+                
+                
+
+            </script>
+        </head>
+        <body>
+
+        </body>
+    </html>
+
